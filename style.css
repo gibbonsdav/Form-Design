@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(74, 160, 219);
+}
+
+section {
+  display: grid;
+  grid-area: auto;
+  grid-template-areas:
+    "firstname phone talent"
+    "lastname affiliations drink"
+    "email occupation specialpower"
+    "country cat weapon"
+    "bio gadget comments";
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 10px;
+  padding: 50px;
+}
+
+label {
+  color: white;
+  display: block;
+  font-size: small;
+}
+
+placeholder {
+  color: white;
+}
+
+input,
+textarea,
+select {
+  background: transparent;
+  color: white;
+  border: white solid thin;
+  width: 350px;
+  outline: none;
+}
+input {
+  height: 25px;
+}
+textarea {
+  height: 75px;
+}
+input:focus {
+  border: 2px solid rgb(23, 103, 157);
+}
